@@ -40,7 +40,7 @@ def deleteProduct(request,id):
     product = Product.objects.get(id=id)
     product.delete()
     
-    #return HttpResponse("product deleted")
+    return HttpResponse("product deleted")
     return render(request,'product/deleteproduct.html')
     
 def updateProduct(request,id):
