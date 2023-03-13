@@ -19,6 +19,7 @@ from electronics.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('bureaucrat/',include('bureaucrat.urls')),
     path('electronics/',include('electronics.urls')),
     path('product/',include('product.urls')),
     path('',home )

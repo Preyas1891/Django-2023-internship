@@ -63,10 +63,10 @@ def addProductWithForm(request):
     
     form = ProductForm()
     if request.method == "POST":
-        form = ProductForm(request.POST or None)
+        form = ProductForm(request.POST  or None)
         if form.is_valid():
             form.save()
-        return HttpResponse("product added")    
+        #return HttpResponse("product added")    
             
         
     return render(request,'product/addproductwithform.html',{'form':form})    
