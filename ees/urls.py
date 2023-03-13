@@ -22,6 +22,7 @@ urlpatterns = [
     path('bureaucrat/',include('bureaucrat.urls')),
     path('electronics/',include('electronics.urls')),
     path('product/',include('product.urls')),
+    path('cbv/',include('cbv.urls')),
     path('',home )
 
 ]
